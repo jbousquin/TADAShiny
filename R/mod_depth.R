@@ -1343,9 +1343,7 @@ mod_depth_server <- function(id, tadat) {
           drop = FALSE
         ]
       }
-      if (
-        !is.na(date_col) && !is.null(sel_date) && nzchar(as.character(sel_date))
-      ) {
+      if (!is.na(date_col) && !is.null(sel_date) && nzchar(as.character(sel_date))) {
         df_sel <- df_sel[
           as.character(df_sel[[date_col]]) == as.character(sel_date),
           ,
